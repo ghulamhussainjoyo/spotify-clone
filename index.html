@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <aside class="aside">
+            <!-- first -->
+            <section class="profile">
+                <div>
+                    <img src="./assets/avatar.jpeg" alt="" />
+                    <div>
+                        <h1>Ghulam Hussain</h1>
+                        <h5>Welcome back👋</h5>
+                    </div>
+                </div>
+                <i class="ri-sound-module-line"></i>
+            </section>
+
+            <!-- second -->
+            <section class="library">
+                <header>
+                    <div>
+                        <i class="ri-file-music-line"></i>
+                        <p>Library</p>
+                    </div>
+                    <i class="ri-add-line"></i>
+                </header>
+
+                <!-- rows -->
+                <div class="favourite-songs">
+                    <div class="row">
+                        <div>
+                            <img src="./assets/avatar.jpeg" alt="" />
+                            <div>
+                                <h5>24.06.23</h5>
+                                <p>Hasancan ozmen</p>
+                            </div>
+                        </div>
+
+                        <i class="ri-pushpin-fill"></i>
+                    </div>
+
+                    <div class="row">
+                        <div>
+                            <img src="./assets/avatar.jpeg" alt="" />
+                            <div>
+                                <h5>B3</h5>
+                                <p>Ozancan Direk</p>
+                            </div>
+                        </div>
+
+                        <!-- <i class="ri-pushpin-fill"></i> -->
+                    </div>
+
+                    <div class="row">
+                        <div>
+                            <img src="./assets/avatar.jpeg" alt="" />
+                            <div>
+                                <h5>🦖</h5>
+                                <p>Hasancan ozmen</p>
+                            </div>
+                        </div>
+
+                        <!-- <i class="ri-pushpin-fill"></i> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- third -->
+
+            <section class="aside audio">
+                <div>
+                    <i class="ri-closed-captioning-fill"></i>
+                    <img src="./assets/avatar.jpeg" alt="" />
+                    <i class="ri-heart-fill"></i>
+                </div>
+
+                <div>
+                    <h4>Ben Kimim - Live</h4>
+                    <p>$aniser, Dedubluman</p>
+                </div>
+
+                <div class="audio-player">
+
+                    <div class="controls">
+                        <i class="ri-skip-back-fill"></i>
+                        <div>
+                            <i class="ri-play-fill"></i>
+                        </div>
+                        <i class="ri-skip-forward-fill"></i>
+                    </div>
+
+                    <audio class="audio">
+                        <source src="assets/lofi-chill.mp3" type="audio/mpeg">
+                    </audio>
+
+                    <div class="audio-progress-indicator">
+                        <span class="timer">00:00</span>
+                        <div>
+                            <span></span>
+                            <input class="progress" type="range" min="0" max="100" />
+                        </div>
+                        <span class="timer duration">00:00</span>
+                    </div>
+
+                    <div class="audio-features">
+
+                        <i class="ri-radio-line"></i>
+                        <i class="ri-shuffle-fill"></i>
+                        <i class="ri-repeat-line"></i>
+
+                        <div class="volume">
+                            <i class="ri-volume-down-line"></i>
+                            <progress id="file" value="70" max="100"> 32% </progress>
+                            <!-- <div class="volume-progress">
+                            </div> -->
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </aside>
+        <main>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, atque
+                magni laboriosam omnis sunt, natus cumque perferendis dolore soluta ea
+                architecto aspernatur aut aperiam perspiciatis doloribus non quo,
+                suscipit esse.
+            </p>
+        </main>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
