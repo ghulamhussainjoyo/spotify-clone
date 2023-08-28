@@ -35,7 +35,8 @@
                 </header>
 
                 <!-- rows -->
-                <div class="favourite-songs">
+                <div class="favourite-songs library-songs">
+
                     <div class="row">
                         <div>
                             <img src="./assets/avatar.jpeg" alt="" />
@@ -71,75 +72,194 @@
 
                         <!-- <i class="ri-pushpin-fill"></i> -->
                     </div>
+
                 </div>
             </section>
 
             <!-- third -->
 
-            <section class="aside audio">
+            <section class="audio">
+                <!-- Song details -->
                 <div>
                     <i class="ri-closed-captioning-fill"></i>
                     <img src="./assets/avatar.jpeg" alt="" />
                     <i class="ri-heart-fill"></i>
                 </div>
 
+                <!-- Song Name -->
                 <div>
                     <h4>Ben Kimim - Live</h4>
                     <p>$aniser, Dedubluman</p>
                 </div>
 
-                <div class="audio-player">
-
-                    <div class="controls">
-                        <i class="ri-skip-back-fill"></i>
-                        <div>
-                            <i class="ri-play-fill"></i>
-                        </div>
-                        <i class="ri-skip-forward-fill"></i>
+                <div class="controls">
+                    <i class="ri-skip-back-fill"></i>
+                    <div id="play-btn">
+                        <i class="ri-play-fill"></i>
                     </div>
+                    <i class="ri-skip-forward-fill"></i>
+                </div>
 
-                    <audio class="audio">
-                        <source src="assets/lofi-chill.mp3" type="audio/mpeg">
-                    </audio>
+                <audio class="audio">
+                    <source src="./songs/pardesh_katenda.mpeg" type="audio/mpeg">
+                </audio>
 
-                    <div class="audio-progress-indicator">
-                        <span class="timer">00:00</span>
-                        <div>
-                            <span></span>
-                            <input class="progress" type="range" min="0" max="100" />
-                        </div>
-                        <span class="timer duration">00:00</span>
-                    </div>
+                <div class="audio-progress-indicator">
+                    <span class="timer song-progress">00:00</span>
+                    <input class="audio-progress" type="range" min="0" max="100" value="0" />
+                    <!-- <div>
+                        <span></span>
+                    </div> -->
+                    <span class="timer duration">00:00</span>
+                </div>
 
-                    <div class="audio-features">
-
-                        <i class="ri-radio-line"></i>
-                        <i class="ri-shuffle-fill"></i>
-                        <i class="ri-repeat-line"></i>
-
-                        <div class="volume">
-                            <i class="ri-volume-down-line"></i>
-                            <progress id="file" value="70" max="100"> 32% </progress>
-                            <!-- <div class="volume-progress">
-                            </div> -->
-                        </div>
+                <div class="audio-features">
+                    <i class="ri-radio-line"></i>
+                    <i class="ri-shuffle-fill"></i>
+                    <i class="ri-repeat-line"></i>
+                    <div class="volume">
+                        <i class="ri-volume-down-line"></i>
+                        <input class="volume-progress" type="range" id="range" value="100" max="100" />
 
                     </div>
-
                 </div>
             </section>
         </aside>
+
+        <!-- Main -->
         <main>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, atque
-                magni laboriosam omnis sunt, natus cumque perferendis dolore soluta ea
-                architecto aspernatur aut aperiam perspiciatis doloribus non quo,
-                suscipit esse.
+
+            <nav class="navbar">
+                <div>
+                    <a class="active" href="https://www.google.co.uk/">
+                        <i class="ri-home-2-line"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="#">
+                        <i class="ri-fire-line"></i>
+                        <span>Trends</span>
+                    </a>
+                    <a href="#">
+                        <i class="ri-search-line"></i>
+                        <span>Search</span>
+                    </a>
+                </div>
+            </nav>
+
+            <p class="greeting">Good Evening</p>
+
+
+            <div class="frequently-songs">
+                <!-- favourite -1 -->
+                <section class="frequently-song">
+
+                    <div>
+                        <img src="./assets/avatar.jpeg" alt="">
+                        <div class="song-details">
+                            <div>
+                                <h5>Tulle Matta</h5>
+                                <p>Sherya Ghosal</p>
+                            </div>
+                            <p>
+                                <span>+</span>
+                                <span>364 songs</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- reaction  -->
+                    <div class="reactions">
+                        <h5>241 Likes</h5>
+
+                        <div class="avatars">
+                            <img src="./assets/avatar.jpeg" alt="">
+                            <img src="./assets/avatar_1.jpeg" alt="">
+                            <img src="./assets/avatar_2.jpeg" alt="">
+                            <img src="./assets/avatar_3.jpeg" alt="">
+                            <img src="./assets/avatar.jpeg" alt="">
+                            <p>
+                                <span>+</span>
+                                <span>236</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- favourite-2 -->
+                <section class="frequently-song">
+
+                    <div>
+                        <img src="./assets/avatar.jpeg" alt="">
+                        <div class="song-details">
+                            <div>
+                                <h5>Tulle Matta</h5>
+                                <p>Sherya Ghosal</p>
+                            </div>
+                            <p>
+                                <span>+</span>
+                                <span>364 songs</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- reaction  -->
+                    <div class="reactions">
+                        <h5>241 Likes</h5>
+
+                        <div class="avatars">
+                            <img src="./assets/avatar.jpeg" alt="">
+                            <img src="./assets/avatar_1.jpeg" alt="">
+                            <img src="./assets/avatar_2.jpeg" alt="">
+                            <img src="./assets/avatar_3.jpeg" alt="">
+                            <img src="./assets/avatar.jpeg" alt="">
+                            <p>
+                                <span>+</span>
+                                <span>236</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+
+
+            <p class="greeting singer">
+                <span>
+                    Compiled for
+                </span>
+                <span>
+                    Ghulam Hussain
+                </span>
             </p>
+
+            <div class="user-playlist">
+                <div>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis dolores ratione, atque, deserunt
+                    vero fuga sed rerum obcaecati quis a sunt dicta mollitia hic placeat cumque cupiditate iure
+                    recusandae iste.
+                </div>
+
+                <div>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis dolores ratione, atque, deserunt
+                    vero fuga sed rerum obcaecati quis a sunt dicta mollitia hic placeat cumque cupiditate iure
+                    recusandae iste.
+                </div>
+                <div>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis dolores ratione, atque, deserunt
+                    vero fuga sed rerum obcaecati quis a sunt dicta mollitia hic placeat cumque cupiditate iure
+                    recusandae iste.
+                </div>
+                <div>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis dolores ratione, atque, deserunt
+                    vero fuga sed rerum obcaecati quis a sunt dicta mollitia hic placeat cumque cupiditate iure
+                    recusandae iste.
+                </div>
+            </div>
         </main>
     </div>
 </body>
 
-<script src="./script.js"></script>
+<!-- <script type="module" src="./script.js"></script> -->
+<script type="module" src="./mp3Player.js"></script>
 
 </html>
