@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Aside -->
+        <aside class="aside">
+            <!-- first -->
+            <section class="profile">
+                <div>
+                    <img src="./assets/avatar.jpeg" alt="" />
+                    <div>
+                        <h1>Ghulam Hussain</h1>
+                        <h5>Welcome back👋</h5>
+                    </div>
+                </div>
+                <i class="ri-sound-module-line"></i>
+            </section>
+
+            <!-- second -->
+            <section class="library">
+                <header>
+                    <div>
+                        <i class="ri-file-music-line"></i>
+                        <p>Library</p>
+                    </div>
+                    <i class="ri-add-line"></i>
+                </header>
+
+                <!-- rows -->
+                <div class="favourite-songs library-songs">
+                    <div class="row">
+                        <div>
+                            <img src="./assets/avatar.jpeg" alt="" />
+                            <div>
+                                <h5>24.06.23</h5>
+                                <p>Hasancan ozmen</p>
+                            </div>
+                        </div>
+
+                        <i class="ri-pushpin-fill"></i>
+                    </div>
+
+                    <div class="row">
+                        <div>
+                            <img src="./assets/avatar.jpeg" alt="" />
+                            <div>
+                                <h5>B3</h5>
+                                <p>Ozancan Direk</p>
+                            </div>
+                        </div>
+
+                        <!-- <i class="ri-pushpin-fill"></i> -->
+                    </div>
+
+                    <div class="row">
+                        <div>
+                            <img src="./assets/avatar.jpeg" alt="" />
+                            <div>
+                                <h5>🦖</h5>
+                                <p>Hasancan ozmen</p>
+                            </div>
+                        </div>
+
+                        <!-- <i class="ri-pushpin-fill"></i> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- third -->
+            <section class="audio">
+                <!-- Song details -->
+                <div>
+                    <i class="ri-closed-captioning-fill"></i>
+                    <img id="songImg" src="./assets/avatar.jpeg" alt="" />
+                    <i class="ri-heart-fill"></i>
+                </div>
+
+                <!-- Song Name -->
+                <div>
+                    <h4 id="songName">Ben Kimim - Live</h4>
+                    <p id="songArtist">$aniser, Dedubluman</p>
+                </div>
+
+                <div class="controls">
+                    <i id="previous" class="ri-skip-back-fill"></i>
+                    <div id="play-btn">
+                        <i class="ri-play-fill"></i>
+                    </div>
+                    <i id="next" class="ri-skip-forward-fill"></i>
+                </div>
+
+                <audio id="audio-elem" class="audio">
+                    <source src="./songs/sassui.mpeg" type="audio/mpeg" />
+                </audio>
+
+                <div class="audio-progress-indicator">
+                    <span class="timer song-progress song-current-time">00:00</span>
+                    <input class="audio-progress" type="range" value="0" min="0" max="100" />
+                    <span class="timer duration">00:00</span>
+                </div>
+
+                <div class="audio-features">
+                    <i class="ri-radio-line"></i>
+                    <i class="ri-shuffle-fill"></i>
+                    <i class="ri-repeat-line"></i>
+                    <div class="volume">
+                        <i class="ri-volume-down-line"></i>
+                        <input class="volume-progress" type="range" id="range" value="100" min="0" max="100" />
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Main -->
+        <main>
+            <!-- nav -->
+            <nav class="navbar">
+                <div>
+                    <a class="navLink" href="./index.html">
+                        <i class="ri-home-2-line"></i>
+                        <span>Home</span>
+                    </a>
+
+                    <a class="navLink " href="./trends.html">
+                        <i class="ri-fire-line"></i>
+                        <span>Trends</span>
+                    </a>
+
+                    <a class="navLink active" href="./search.html">
+                        <i class="ri-search-line"></i>
+                        <span>Search</span>
+                    </a>
+                </div>
+            </nav>
+
+
+            <div class="search">
+
+                <div class="search-results">
+                    <section>
+                        <p class="title">Search Result</p>
+                        <div class="search-result-container">
+                            <div class="result-card">
+                                <div>
+                                    <img src="./assets/avatar.jpeg" alt="">
+                                    <h4>Old Town Road</h4>
+                                </div>
+                                <p>Lil Nas X</p>
+                                <p>1.1B Plays</p>
+                                <p>2:36</p>
+                            </div>
+                            <div class="result-card">
+                                <div>
+                                    <img src="./assets/avatar.jpeg" alt="">
+                                    <h4>Old Town Road</h4>
+                                </div>
+                                <p>Lil Nas X</p>
+                                <p>1.1B Plays</p>
+                                <p>2:36</p>
+                            </div>
+                            <div class="result-card">
+                                <div>
+                                    <img src="./assets/avatar.jpeg" alt="">
+                                    <h4>Old Town Road</h4>
+                                </div>
+                                <p>Lil Nas X</p>
+                                <p>1.1B Plays</p>
+                                <p>2:36</p>
+                            </div>
+                            <div class="result-card">
+                                <div>
+                                    <img src="./assets/avatar.jpeg" alt="">
+                                    <h4>Old Town Road</h4>
+                                </div>
+                                <p>Lil Nas X</p>
+                                <p>1.1B Plays</p>
+                                <p>2:36</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="search-top-result">
+                        <p class="title">top result</p>
+                        <div class="top-result-card">
+                            <img src="./assets/avatar.jpeg" alt="">
+                            <h4>Old Town Road</h4>
+                            <p>Lil Nas X</p>
+                            <div class="song-stats">
+                                <p>1.1B Plays</p>
+                                <p>2:36</p>
+                            </div>
+                            <div class="song-tags">
+                                <div>
+                                    <span>song</span>
+                                </div>
+                                <div>
+                                    <span>pop</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+
+                <div class="artist">
+
+                    <p class="title">Artist</p>
+                    <div class="artist-card-container">
+                        <div class="artist-card">
+
+                            <img src="./assets/avatar.jpeg" alt="">
+                            <h4 class="artist-name">Lil Nas X</h4>
+
+                            <div class="artist-tag">
+                                <span>artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+
+                            <img src="./assets/avatar.jpeg" alt="">
+                            <h4 class="artist-name">Lil Nas X</h4>
+
+                            <div class="artist-tag">
+                                <span>artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+
+                            <img src="./assets/avatar.jpeg" alt="">
+                            <h4 class="artist-name">Lil Nas X</h4>
+
+                            <div class="artist-tag">
+                                <span>artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+
+                            <img src="./assets/avatar.jpeg" alt="">
+                            <h4 class="artist-name">Lil Nas X</h4>
+
+                            <div class="artist-tag">
+                                <span>artist</span>
+                            </div>
+                        </div>
+
+                        <div class="artist-card">
+
+                            <img src="./assets/avatar.jpeg" alt="">
+                            <h4 class="artist-name">Lil Nas X</h4>
+
+                            <div class="artist-tag">
+                                <span>artist</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+</body>
+
+<script type="module" src="./script.js"></script>
+<!-- <script type="module" src="./mp3Player.js"></script> -->
+
+</html>
