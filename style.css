@@ -1,6 +1,7 @@
 @import url("./main.css");
 @import url("./trending.css");
 @import url("./search.css");
+
 * {
   margin: 0;
   padding: 0;

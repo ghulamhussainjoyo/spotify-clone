@@ -66,9 +66,8 @@ const nextBtn = document.querySelector("#next");
 const navLink = document.querySelectorAll(".navLink");
 const mainElm = document.querySelector("#main");
 const songsLibraryELem = document.querySelector("#songLibrary");
-songsLibraryELem.innerHTML = librarySongCards(songCollections);
 
-console.log(songsLibraryELem.children);
+songsLibraryELem.innerHTML = librarySongCards(songCollections);
 
 for (let i = 0; i < songsLibraryELem.children.length; i++) {
   const songName =
@@ -78,6 +77,7 @@ for (let i = 0; i < songsLibraryELem.children.length; i++) {
   const songIndex = songCollections.findIndex(
     (song) => song.songName.toLowerCase() === songName.toLowerCase()
   );
+
   songsLibraryELem.children[i].addEventListener("click", () => {
     playSong(songIndex);
   });
@@ -123,10 +123,9 @@ audioElem.addEventListener("timeupdate", function (track) {
   const _currentTime = track.currentTarget.currentTime;
   currentTime = _currentTime;
   songCurrentTimeElem.textContent = formatTime(_currentTime);
-  const currentTimePersentage = (_currentTime / duration) * 100;
-
-  root.style.setProperty("--audio-progress", `${currentTimePersentage}%`);
-  audioProgressRangeElem.value = currentTimePersentage;
+  const currentTimePercentage = (_currentTime / duration) * 100;
+  root.style.setProperty("--audio-progress", `${currentTimePercentage}%`);
+  audioProgressRangeElem.value = currentTimePercentage;
 });
 
 function onPlayBtnClickHandler() {

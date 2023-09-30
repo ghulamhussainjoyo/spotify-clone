@@ -1,0 +1,20 @@
+[
+    {
+      "img": "./songs/pardes_katenda.jpeg",
+      "songName": "pardes katenda",
+      "artist": "Adnan Dhol",
+      "src": "./songs/pardesh_katenda.mpeg"
+    },
+    {
+      "img": "./songs/sassui.jpeg",
+      "songName": "Sassui",
+      "artist": "nafs band",
+      "src": "./songs/sassui.mpeg"
+    },
+    {
+      "img": "./songs/sindhu.jpeg",
+      "songName": "sindhu",
+      "artist": "nafs band",
+      "src": "./songs/sindhu.mpeg"
+    }
+  ]
